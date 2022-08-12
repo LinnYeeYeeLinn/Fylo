@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap'); */
 
 :root{
     --main-color: hsl(218, 28%, 13%);
@@ -27,10 +25,10 @@
     list-style-type: none;
 }
 html{
-    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     background-color:  var(--main-color);
@@ -39,7 +37,7 @@ body{
 .padding_x{
     padding-inline: 8%;
 }
-.padding_all{
+.padding_y{
     padding-block: 5rem;
 }
 .text-center{
@@ -63,7 +61,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    padding-block: 1.7rem;
+    padding-block: 2rem;
     z-index: 1000;
 }
 nav a{
@@ -278,6 +276,9 @@ footer{
     .padding_x{
         padding-inline: 5%;
     }
+    footer{
+        padding: 23rem 5% 2rem 5%;
+    }
     .padding_all{
         padding-block: 3rem ;
     }
@@ -312,9 +313,6 @@ footer{
     }
 }
 @media screen and (max-width: 500px) {
-    footer{
-        padding: 23rem 5% 2rem 5%;
-    }
     .footer_content{
         grid-template-columns: 2fr;
     }
@@ -323,16 +321,22 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .padding_x{
+        padding-inline: 2.5%;
+    }
+    footer{
+        padding: 23rem 2.5% 2rem 2.5%;
+    }
 }
 @media screen and (max-width: 400px) {
     html{
         font-size: 55%;
     }
+    .signupContainer{
+        width: 95%;
+    }
 }
 @media screen and (max-width: 375px) {
-    .padding_x{
-        padding-inline: 2%;
-    }
     nav a{
         padding: 0 .7rem;
     }
@@ -340,15 +344,12 @@ footer{
         padding-inline: 1.5rem;
     }
     .service_section{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     .box{
-        padding: 3rem 2rem;
+        padding: 2rem 1rem;
     }
     .reviewContainer{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .signupContainer{
-        width: 95%;
     }
 }
