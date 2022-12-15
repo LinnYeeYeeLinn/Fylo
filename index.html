@@ -18,11 +18,11 @@
 <body>
     <!-- nav header -->
     <header class="padding_x">
-        <a href="#" class="logo"><img src="./images/logo.svg" width="100" alt=""></a>
+        <a href="#" class="logo"><img src="./images/logo.svg" width="80" alt=""></a>
         <nav>
-            <a href="#features">Features</a>
-            <a href="#team">Team</a>
-            <a href="#signup">Sign In</a>
+            <a href="#features" class="menu active" onclick="showContent(event)">Features</a>
+            <a href="#team" class="menu" onclick="showContent(event)">Team</a>
+            <a href="#signup" class="menu" onclick="showContent(event)">Sign In</a>
         </nav>
     </header>
 
@@ -37,7 +37,7 @@
     </section>
 
     <!-- feature section -->
-    <section class="text-center padding_y padding_x service_section" id="features">
+    <section class="text-center padding_y padding_x service_section tabContent" id="features">
         <div class="box">
             <img src="./images/icon-access-anywhere.svg" alt="">
             <h2 class="box_title">Access your files, anywhere</h2>
@@ -92,7 +92,7 @@
     </section>
 
     <!-- team section -->
-    <section class="reviewContainer padding_y padding_x" id="team">
+    <section class="reviewContainer padding_y padding_x tabContent" id="team">
         <div class="review_box">
             <p>
                 Fylo has improved our team productivity by an order of
@@ -135,7 +135,7 @@
     </section>
 
     <!-- sign up section -->
-    <div class="signupContainer" id="signup">
+    <div class="signupContainer tabContent" id="signup">
         <div class="signup">
             <h1 class="h1Text">Get early access today</h1>
             <p>

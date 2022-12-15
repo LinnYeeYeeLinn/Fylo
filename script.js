@@ -20,3 +20,16 @@ submitBtn.addEventListener("click", (e) => {
     }
     e.preventDefault();
 })
+
+
+const menu = document.querySelectorAll('.menu');
+const tabContent = document.querySelectorAll('.tabContent');
+
+function showContent(event){
+    for(let i = 0; i < tabContent.length; i++){
+        for(let j = 0; j < menu.length; j++){
+            menu[j].className = menu[j].className.replace("active", "");
+        }
+    }
+    event.currentTarget.className += " active";
+}
